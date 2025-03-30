@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Discovery - Food Haven</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #ffcc66;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav img {
+            height: 40px;
+        }
+
+        nav input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        nav button {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        nav button:hover {
+            background-color: #ff9966;
+        }
+
+        /* Trending Recipes Section */
+        .container {
+            padding: 30px;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #ff6600;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .recipe-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .recipe-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: calc(33.333% - 20px);
+        }
+
+        .recipe-card h3 {
+            font-size: 1.2em;
+            color: #ff6600;
+            margin: 10px;
+        }
+
+        .recipe-card p {
+            margin: 10px;
+            font-size: 0.9em;
+            color: #444;
+        }
+
+        .recipe-card .rating {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px 10px 10px;
+        }
+
+        .recipe-card .rating span {
+            color: #ff6600;
+            font-weight: bold;
+        }
+
+        .recipe-card button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .recipe-card button:hover {
+            background-color: #ff9966;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ffcc66;
+            padding: 20px;
+            text-align: center;
+            border-top: 5px solid #ff9966;
+        }
+
+        footer p {
+            color: #333;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <img src="logo.png" alt="Food Haven Logo">
+        <input type="text" placeholder="Find a recipe or ingredient...">
+        <button>Search</button>
+    </nav>
+
+    <!-- Trending Recipes Section -->
+    <div class="container">
+        <h2 class="section-title">Trending Recipes</h2>
+        <div class="recipe-grid">
+            <!-- Recipe Card 1 -->
+            <div class="recipe-card">
+                <h3>Butter Chicken</h3>
+                <p>Chicken | 5 Ratings</p>
+                <div class="rating">
+                    <span>★★★★★</span>
+                </div>
+                <button onclick="window.location.href='butter_chicken.html'">View Recipe</button>
+            </div>
+
+            <!-- Recipe Card 2 -->
+            <div class="recipe-card">
+                <h3>Biryani</h3>
+                <p>Rice | 4.5 Ratings</p>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                </div>
+                <button onclick="window.location.href='biryani.html'">View Recipe</button>
+            </div>
+
+            <!-- Recipe Card 3 -->
+            <div class="recipe-card">
+                <h3>Paneer Tikka</h3>
+                <p>Vegetarian | 4.7 Ratings</p>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                </div>
+                <button onclick="window.location.href='paneer_tikka.html'">View Recipe</button>
+            </div>
+
+            <!-- Recipe Card 4 -->
+            <div class="recipe-card">
+                <h3>Chole Bhature</h3>
+                <p>Vegetarian | 5 Ratings</p>
+                <div class="rating">
+                    <span>★★★★★</span>
+                </div>
+                <button onclick="window.location.href='chole_bhature.html'">View Recipe</button>
+            </div>
+
+            <!-- Recipe Card 5 -->
+            <div class="recipe-card">
+                <h3>Masala Dosa</h3>
+                <p>South Indian | 4.9 Ratings</p>
+                <div class="rating">
+                    <span>★★★★★</span>
+                </div>
+                <button onclick="window.location.href='masala_dosa.html'">View Recipe</button>
+            </div>
+
+            <!-- Recipe Card 6 -->
+            <div class="recipe-card">
+                <h3>Rogan Josh</h3>
+                <p>Mutton | 4.8 Ratings</p>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                </div>
+                <button onclick="window.location.href='rogan_josh.html'">View Recipe</button>
+            </div>
+
+            <!-- Recipe Card 7 -->
+            <div class="recipe-card">
+                <h3>Palak Paneer</h3>
+                <p>Vegetarian | 4.6 Ratings</p>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                </div>
+                <button onclick="window.location.href='palak_paneer.html'">View Recipe</button>
+            </div>
+
+            <!-- Recipe Card 8 -->
+            <div class="recipe-card">
+                <h3>Dal Makhani</h3>
+                <p>Vegetarian | 5 Ratings</p>
+                <div class="rating">
+                    <span>★★★★★</span>
+                </div>
+                <button onclick="window.location.href='dal_makhani.html'">View Recipe</button>
+            </div>
+
+            <!-- Recipe Card 9 -->
+            <div class="recipe-card">
+                <h3>Gulab Jamun</h3>
+                <p>Dessert | 4.7 Ratings</p>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                </div>
+                <button onclick="window.location.href='gulab_jamun.html'">View Recipe</button>
+            </div>
+
+            <!-- Recipe Card 10 -->
+            <div class="recipe-card">
+                <h3>Jalebi</h3>
+                <p>Dessert | 4.5 Ratings</p>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                </div>
+                <button onclick="window.location.href='jalebi.html'">View Recipe</button>
+            </div>
+            
+            <!-- Recipe Card 11 -->
+            <div class="recipe-card">
+                <h3>Samosa</h3>
+                <p>Snack | 4.8 Ratings</p>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                </div>
+                <button onclick="window.location.href='samosa.html'">View Recipe</button>
+            </div>
+
+            <!-- Recipe Card 12 -->
+            <div class="recipe-card">
+                <h3>Fish Curry</h3>
+                <p>Seafood | 4.7 Ratings</p>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                </div>
+                <button onclick="window.location.href='fish_curry.html'">View Recipe</button>
+            </div>
+
+            <!-- Recipe Card 13 -->
+            <div class="recipe-card">
+                <h3>Cauliflower Manchurian</h3>
+                <p>Vegetarian | 4.6 Ratings</p>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                </div>
+                <button onclick="window.location.href='cauliflower_manchurian.html'">View Recipe</button>
+            </div>
+
+            <!-- Recipe Card 14 -->
+            <div class="recipe-card">
+                <h3>Chocolate Cake</h3>
+                <p>Dessert | 5 Ratings</p>
+                <div class="rating">
+                    <span>★★★★★</span>
+                </div>
+                <button onclick="window.location.href='chocolate_cake.html'">View Recipe</button>
+            </div>
+
+            <!-- Recipe Card 15 -->
+            <div class="recipe-card">
+                <h3>Paneer Butter Masala</h3>
+                <p>Vegetarian | 4.9 Ratings</p>
+                <div class="rating">
+                    <span>★★★★★</span>
+                </div>
+                <button onclick="window.location.href='paneer_butter_masala.html'">View Recipe</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Happy Cooking with Food Haven!</p>
+    </footer>
+
+</body>
+</html>
